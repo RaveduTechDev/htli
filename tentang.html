@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -51,11 +53,11 @@
       <article class="home-about">
         <div class="container">
           <div class="content-about flex">
-            <div class="img-about">
+            <div class="img-about" data-aos="zoom-in" data-aos-duration="700">
               <img src="assets/img/logo-demo.png" alt="" />
             </div>
 
-            <section class="about-text">
+            <section class="about-text" data-aos="fade-up" data-aos-duration="700">
               <h2 class="title">Tentang Kami</h2>
               <p>
                 <span class="text-green">PT. Hijau Tata Lingkungan Indonesia</span> adalah produk jasa kepedulian lingkungan yang fokus menangani pengelolaan sampah kota, limbah industri, limbah pertanian dan limbah peternakan. Kegiatan
@@ -72,7 +74,7 @@
         <h2>Expert Team</h2>
 
         <div class="container">
-          <div class="team-expert">
+          <div class="team-expert" data-aos="fade-up" data-aos-duration="700">
             <img src="assets/img/Team.png" alt="Team Us" />
           </div>
         </div>
@@ -85,15 +87,15 @@
           <p>Perusahaan kami sudah terintegrasi dengan FestTronik dan GPS Tracking Silacak</p>
 
           <div class="detail-fitur flex">
-            <div class="gambar-fitur">
+            <div class="gambar-fitur" data-aos="fade-right" data-aos-duration="700">
               <img src="assets/img/f1.png" alt="" />
             </div>
-            <div class="gambar-fitur">
+            <div class="gambar-fitur" data-aos="fade-left" data-aos-duration="700">
               <img src="assets/img/f2.png" alt="" />
             </div>
           </div>
 
-          <p class="desc-fitur">
+          <p class="desc-fitur" data-aos="fade-up" data-aos-duration="700">
             Manifes elektronik (FestTronik) adalah sistem pemantauan terhadap kegiatan pengangkutan limbah B3, untuk mencegah terjadinya pencemaran lingkungan akibat pengelolaan limbah B3 yang melanggar peraturan, melalui peraturan menteri
             LHK Nomor P.4/Menlhk/Setjen/Kum.1/1/2020 tentang Pengangkutan Limbah Bahan Berbahaya dan Beracun. penggunaan FestTronik per tanggal 1 Agustus 2020 menjadi kewajiban.
           </p>
@@ -168,5 +170,12 @@
     ></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>

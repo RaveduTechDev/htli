@@ -419,6 +419,10 @@ nav ul li .nav-links.active::after {
   margin-bottom: 1rem;
 }
 
+.layanan-service .content-service .card-service p {
+  line-height: 1.8rem;
+}
+
 /* armada-home */
 .armada {
   padding-top: 7rem;
@@ -569,6 +573,7 @@ nav ul li .nav-links.active::after {
 
 .fitur-perusahaan .desc-fitur {
   margin: 0 7rem;
+  line-height: 1.8rem;
 }
 
 /* wa */
@@ -776,11 +781,12 @@ footer {
 
 .via-wa a i {
   font-size: 1.2rem;
-  padding-right: 0.2rem;
+  padding-right: 0.5rem;
 }
 
 .via-wa a {
-  display: block;
+  justify-content: center;
+  display: flex;
   text-decoration: none;
   color: white;
   padding: 1rem;
@@ -819,6 +825,7 @@ footer {
 
 .content-contact .pt p {
   margin-bottom: 0.5rem;
+  line-height: 1.8rem;
 }
 
 .content-contact .icons-email a {
@@ -848,9 +855,13 @@ footer {
   .content-about .about-text {
     margin-left: 0.5rem;
   }
+
+  .content-contact .pt {
+    margin-left: 2rem;
+  }
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 963px) {
   nav ul {
     display: flex;
     position: absolute;
@@ -889,7 +900,7 @@ footer {
   }
 
   nav ul li a:hover {
-    color: black;
+    color: white;
   }
 
   header.scrolling nav ul li .nav-links.active::after {
@@ -974,6 +985,11 @@ footer {
     margin: 0;
   }
 
+  .content-armada .armada-text p,
+  .content-armada .armada-text2 p {
+    margin-right: 0;
+  }
+
   .fitur-perusahaan .desc-fitur {
     margin: 0 1rem;
   }
@@ -1000,20 +1016,18 @@ footer {
     margin-top: 4rem;
     margin-left: 0rem;
   }
-
-  .wa-me {
-    right: 15%;
-  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 910px) {
   .via {
     text-align: center;
     display: block;
     margin: 4rem 0 0;
     padding: 0;
   }
+}
 
+@media screen and (max-width: 900px) {
   .mt-service {
     padding-top: 5rem;
   }
@@ -1021,11 +1035,24 @@ footer {
   .layanan-service {
     padding-top: 5rem;
   }
+
+  .content-about .about-text p {
+    margin-right: 0rem;
+  }
+
+  .visi-misi .content-vm .text-vm .visi p,
+  .visi-misi .content-vm .text-vm .misi p {
+    margin-right: 0rem;
+  }
 }
 
 @media screen and (max-width: 780px) {
   .container {
     margin: 0 2rem;
+  }
+
+  .layanan-service .content-service .card-service {
+    margin: 4rem 1rem 0;
   }
 
   .content-about .img-about {
@@ -1118,5 +1145,9 @@ footer {
 
   .box-service {
     flex-direction: column;
+  }
+
+  .layanan-service .content-service .card-service {
+    margin: 4rem 0rem 0;
   }
 }
