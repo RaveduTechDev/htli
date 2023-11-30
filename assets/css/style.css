@@ -945,9 +945,13 @@ footer {
     margin-top: 3rem;
   }
 
+  .content-about .about-text p {
+    margin-right: 0;
+  }
+
   .visi-misi .content-vm .text-vm .visi p,
   .visi-misi .content-vm .text-vm .misi p {
-    margin-right: 1rem;
+    margin-right: 0rem;
   }
 
   .customer {
@@ -1026,6 +1030,10 @@ footer {
   .layanan-service {
     padding-top: 5rem;
   }
+
+  .layanan-service .content-service .card-service {
+    margin: 4rem 1rem 0;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -1069,6 +1077,10 @@ footer {
     padding-top: 1rem;
   }
 
+  .mt-fiturp {
+    margin-top: 5rem;
+  }
+
   .fitur-perusahaan .desc-fitur {
     text-align: justify;
   }
@@ -1087,7 +1099,7 @@ footer {
   }
 
   .team-us {
-    padding-top: 3rem;
+    padding-top: 0rem;
   }
 
   .mt-service {
@@ -1108,8 +1120,16 @@ footer {
     margin-top: -2rem;
   }
 
+  .layanan-service .content-service .card-service {
+    margin: 4rem auto 0;
+  }
+
   footer {
     margin-top: -2rem;
+  }
+
+  .fitur-perusahaan .detail-fitur {
+    display: block;
   }
 
   .via {
