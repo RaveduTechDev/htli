@@ -781,12 +781,11 @@ footer {
 
 .via-wa a i {
   font-size: 1.2rem;
-  padding-right: 0.5rem;
+  padding-right: 0.2rem;
 }
 
 .via-wa a {
-  justify-content: center;
-  display: flex;
+  display: block;
   text-decoration: none;
   color: white;
   padding: 1rem;
@@ -825,7 +824,6 @@ footer {
 
 .content-contact .pt p {
   margin-bottom: 0.5rem;
-  line-height: 1.8rem;
 }
 
 .content-contact .icons-email a {
@@ -900,7 +898,7 @@ footer {
   }
 
   nav ul li a:hover {
-    color: white;
+    color: black;
   }
 
   header.scrolling nav ul li .nav-links.active::after {
@@ -985,11 +983,6 @@ footer {
     margin: 0;
   }
 
-  .content-armada .armada-text p,
-  .content-armada .armada-text2 p {
-    margin-right: 0;
-  }
-
   .fitur-perusahaan .desc-fitur {
     margin: 0 1rem;
   }
@@ -1018,16 +1011,14 @@ footer {
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 900px) {
   .via {
     text-align: center;
     display: block;
     margin: 4rem 0 0;
     padding: 0;
   }
-}
 
-@media screen and (max-width: 900px) {
   .mt-service {
     padding-top: 5rem;
   }
@@ -1035,24 +1026,11 @@ footer {
   .layanan-service {
     padding-top: 5rem;
   }
-
-  .content-about .about-text p {
-    margin-right: 0rem;
-  }
-
-  .visi-misi .content-vm .text-vm .visi p,
-  .visi-misi .content-vm .text-vm .misi p {
-    margin-right: 0rem;
-  }
 }
 
 @media screen and (max-width: 780px) {
   .container {
     margin: 0 2rem;
-  }
-
-  .layanan-service .content-service .card-service {
-    margin: 4rem 1rem 0;
   }
 
   .content-about .img-about {
@@ -1135,7 +1113,7 @@ footer {
   }
 
   .via {
-    margin: 0 -2rem;
+    margin: 3rem -2rem 0;
   }
 
   .content-about .img-about {
@@ -1145,9 +1123,5 @@ footer {
 
   .box-service {
     flex-direction: column;
-  }
-
-  .layanan-service .content-service .card-service {
-    margin: 4rem 0rem 0;
   }
 }
