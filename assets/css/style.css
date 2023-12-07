@@ -409,7 +409,7 @@ nav ul li .nav-links.active::after {
   height: auto;
 }
 
-.pengantar-content .img-about p {
+.pengantar-content .img-about h3 {
   text-align: center;
   color: var(--color-green1);
   text-decoration: none;
@@ -1393,10 +1393,6 @@ footer {
     width: 100px;
     margin: 0.5rem;
     height: 60px;
-  }
-
-  .pengantar .img-about p {
-    font-size: 0.8rem;
   }
 }
 
