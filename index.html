@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -340,6 +342,50 @@
           </p>
         </div>
       </article>
+
+      <article class="gallery">
+        <h2>Gallery</h2>
+        <section class="gallery-body">
+          <div class="gallery-content">
+            <a href="assets/img/gallery/b1.jpg">
+              <img src="assets/img/gallery/b1.jpg" class="gallery-img" alt="" />
+              <p class="degal">Lihat Detail</p>
+            </a>
+
+            <a href="assets/img/gallery/prsnl1.jpg">
+              <img src="assets/img/gallery/prsnl1.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/tr1.jpg">
+              <img src="assets/img/gallery/tr1.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/prsnl2.jpg">
+              <img src="assets/img/gallery/prsnl2.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/tr2.jpg">
+              <img src="assets/img/gallery/tr2.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/b2.jpg">
+              <img src="assets/img/gallery/b2.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/tr3.jpg">
+              <img src="assets/img/gallery/tr3.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/prsnl3.jpg">
+              <img src="assets/img/gallery/prsnl3.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/b1.jpg">
+              <img src="assets/img/gallery/tr4.jpg" class="gallery-img" alt="" />
+            </a>
+          </div>
+        </section>
+      </article>
     </main>
 
     <a href="https://api.whatsapp.com/send?phone=628118814090&text=Hallo,%20Saya%20ingin%20menggunakan%20layanan%20service%20anda" class="_link-wa" target="_blank">
@@ -407,6 +453,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
 
@@ -415,6 +464,8 @@
       AOS.init({
         once: true,
       });
+
+      lightGallery(document.querySelector(".gallery-content"));
     </script>
   </body>
 </html>
