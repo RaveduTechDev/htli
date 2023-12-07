@@ -411,7 +411,7 @@ nav ul li .nav-links.active::after {
 
 .pengantar-content .img-about p {
   text-align: center;
-  color: #000000;
+  color: var(--color-green1);
   text-decoration: none;
 }
 
@@ -1138,6 +1138,10 @@ footer {
     margin-right: 0;
   }
 
+  .pengantar {
+    padding-top: 1rem;
+  }
+
   .pengantar-content {
     margin-top: 2rem;
     flex-direction: column-reverse;
@@ -1152,7 +1156,7 @@ footer {
   }
 
   .pengantar .pengantar-desc .title {
-    margin-top: 2rem;
+    margin-top: 2.2rem;
   }
 
   .pengantar .pengantar-desc p {
@@ -1390,6 +1394,10 @@ footer {
     margin: 0.5rem;
     height: 60px;
   }
+
+  .pengantar .img-about p {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -1397,5 +1405,16 @@ footer {
     width: 90px;
     margin: 0.5rem;
     height: 70px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .pengantar .img-about {
+    width: 200px;
+  }
+
+  .pengantar .img-about img {
+    width: 100%;
+    height: auto;
   }
 }
