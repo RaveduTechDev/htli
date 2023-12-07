@@ -89,7 +89,7 @@ nav ul {
 
 nav ul li {
   font-size: 1.07rem;
-  margin: 0.7rem 0 0 2rem;
+  margin: 1.5rem 0 0 2rem;
 }
 
 nav ul li a {
@@ -275,8 +275,8 @@ nav ul li .nav-links.active::after {
 
 .slider-c .customer-slide {
   display: flex;
-  width: calc(250px * 18);
-  animation: scrollCustomer 15s linear infinite;
+  width: calc(250px * 28);
+  animation: scrollCustomer 28s linear infinite;
 }
 
 .slider-c .customer-slide .slidecus {
@@ -296,7 +296,7 @@ nav ul li .nav-links.active::after {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 3));
+    transform: translateX(calc(-250px * 7.5));
   }
 }
 
@@ -644,11 +644,16 @@ footer {
   flex: 1;
   margin: 10px;
   text-align: left;
+  color: white;
 }
 
 .footer-list img {
   margin-bottom: 1rem;
   width: 100px;
+
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .footer-list h2 {
@@ -730,10 +735,110 @@ footer {
   width: 100%;
 }
 
+/* gallery tentang */
+
+.gallery {
+  padding-top: 7rem;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.gallery h2 {
+  text-align: center;
+  color: var(--color-green1);
+}
+
+.gallery h2::after {
+  content: "";
+  background-color: var(--color-green1);
+  height: 3px;
+  border-radius: 1rem;
+  display: block;
+  width: 40px;
+  transform: translateY(0.2rem);
+  transition: all 300ms;
+  margin: 0.3rem auto 2.5rem;
+}
+
+.gallery-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery-content a {
+  margin: 1rem;
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.gallery-content a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms;
+}
+
+.gallery-content a img:hover {
+  transform: scale(1.1);
+  filter: brightness(40%);
+}
+
+.lg-download {
+  display: none;
+}
+
 /* legalitas */
 .legalitas {
-  margin-top: 10rem;
-  min-height: 20vh;
+  padding-top: 10rem;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.legalitas h2 {
+  text-align: center;
+  color: var(--color-green1);
+}
+
+.legalitas h2::after {
+  content: "";
+  background-color: var(--color-green1);
+  height: 3px;
+  border-radius: 1rem;
+  display: block;
+  width: 40px;
+  transform: translateY(0.2rem);
+  transition: all 300ms;
+  margin: 0.3rem auto 2.5rem;
+}
+
+.legalitas .legalitas-content {
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.legalitas .legalitas-content h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.legalitas .legalitas-content .legalitas-list {
+  margin: 1rem;
+}
+
+.legalitas .legalitas-content .legalitas-list iframe {
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 /* == customer == */
@@ -809,7 +914,7 @@ footer {
 
 .content-contact .card-img img {
   margin: 0 auto;
-  width: 500px;
+  width: 450px;
 }
 
 .content-contact .pt {
@@ -834,6 +939,14 @@ footer {
 
 .content-contact .icons-footer i {
   padding-right: 7px;
+}
+
+@media screen and (max-width: 1150px) {
+  .gallery-content a {
+    margin: 1rem;
+    width: 250px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1013,6 +1126,10 @@ footer {
     margin-top: 4rem;
     margin-left: 0rem;
   }
+
+  .gallery-content a {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1113,6 +1230,20 @@ footer {
   .visi-misi .content-vm .text-vm .misi {
     margin-bottom: 3rem;
   }
+
+  .gallery-content a {
+    width: 180px;
+    margin: 0.5rem;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .gallery-content a {
+    width: 150px;
+    margin: 0.5rem;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1143,5 +1274,31 @@ footer {
 
   .box-service {
     flex-direction: column;
+  }
+
+  .gallery-content a {
+    width: 120px;
+    margin: 0.5rem;
+    height: 80px;
+  }
+
+  .legalitas .legalitas-content h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-content a {
+    width: 100px;
+    margin: 0.5rem;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .gallery-content a {
+    width: 90px;
+    margin: 0.5rem;
+    height: 70px;
   }
 }

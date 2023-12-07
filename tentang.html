@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PT. Hijau Tata Lingkungan Indonesia</title>
+    <meta name="description" content="jasa kepedulian lingkungan yang fokus menangani pengelolaan sampah kota, limbah industri, limbah pertanian dan limbah peternakan." />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/logo_htli.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
 
     <link
       rel="stylesheet"
@@ -24,7 +27,7 @@
         <section class="navbar">
           <div class="logo">
             <a href="index.html">
-              <img src="assets/img/logo-demo.png" alt="" />
+              <img src="assets/img/logo_htli.png" alt="" />
             </a>
           </div>
 
@@ -54,7 +57,7 @@
         <div class="container">
           <div class="content-about flex">
             <div class="img-about" data-aos="zoom-in" data-aos-duration="700">
-              <img src="assets/img/logo-demo.png" alt="" />
+              <img src="assets/img/logo_htli.png" alt="" />
             </div>
 
             <section class="about-text" data-aos="fade-up" data-aos-duration="700">
@@ -101,9 +104,53 @@
           </p>
         </div>
       </article>
+
+      <article class="gallery">
+        <h2>Gallery</h2>
+        <section class="gallery-body">
+          <div class="gallery-content">
+            <a href="assets/img/gallery/b1.jpg">
+              <img src="assets/img/gallery/b1.jpg" class="gallery-img" alt="" />
+              <p class="degal">Lihat Detail</p>
+            </a>
+
+            <a href="assets/img/gallery/prsnl1.jpg">
+              <img src="assets/img/gallery/prsnl1.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/tr1.jpg">
+              <img src="assets/img/gallery/tr1.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/prsnl2.jpg">
+              <img src="assets/img/gallery/prsnl2.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/tr2.jpg">
+              <img src="assets/img/gallery/tr2.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/b2.jpg">
+              <img src="assets/img/gallery/b2.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/tr3.jpg">
+              <img src="assets/img/gallery/tr3.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/prsnl3.jpg">
+              <img src="assets/img/gallery/prsnl3.jpg" class="gallery-img" alt="" />
+            </a>
+
+            <a href="assets/img/gallery/b1.jpg">
+              <img src="assets/img/gallery/tr4.jpg" class="gallery-img" alt="" />
+            </a>
+          </div>
+        </section>
+      </article>
     </main>
 
-    <a href="https://api.whatsapp.com/send?phone=6281394345351&text=Hallo,%20Saya%20ingin%20menggunakan%20layanan%20service%20anda" class="_link-wa" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=628118814090&text=Hallo,%20Saya%20ingin%20menggunakan%20layanan%20service%20anda" class="_link-wa" target="_blank">
       <section class="wa-me">
         <div class="whatsapp">
           <i class="fa-brands fa-whatsapp"></i>
@@ -123,7 +170,7 @@
       <section class="footer-content">
         <div class="footer-flex">
           <div class="footer-list">
-            <img src="assets/img/logo-demo.png" alt="" />
+            <img src="assets/img/logo_htli.png" alt="" />
             <p>PT. Hijau Tata Lingkungan Indonesia adalah produk jasa kepedulian lingkungan yang...</p>
 
             <div class="btn">
@@ -145,7 +192,7 @@
           <div class="footer-list">
             <h2>Hubungi Kami</h2>
             <p>Email: nurdin@htli.co.id</p>
-            <p>Phone: +62 813 9434 5351</p>
+            <p>Phone: +62 811 8814 090</p>
           </div>
 
           <div class="footer-list social-icons">
@@ -168,6 +215,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
 
@@ -176,6 +226,8 @@
       AOS.init({
         once: true,
       });
+
+      lightGallery(document.querySelector(".gallery-content"));
     </script>
   </body>
 </html>
