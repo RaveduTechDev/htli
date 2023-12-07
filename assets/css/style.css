@@ -368,6 +368,61 @@ nav ul li .nav-links.active::after {
   margin-bottom: -3rem;
 }
 
+/* pengantar */
+.pengantar {
+  padding-top: 5rem;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.pengantar .pengantar-desc {
+  margin-right: 3.5rem;
+}
+
+.pengantar .pengantar-desc .title {
+  font-size: 2.2rem;
+  color: var(--color-green1);
+  margin-top: 1rem;
+}
+
+.pengantar .pengantar-desc p {
+  text-align: justify;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  line-height: 1.8rem;
+}
+
+.pengantar .pengantar-desc #mySelengkapnya {
+  display: none;
+}
+
+.pengantar-content .img-about {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.pengantar-content .img-about img {
+  width: 480px;
+  height: auto;
+}
+
+.pengantar .read-more-btn {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+.pengantar .read-more-text {
+  display: none;
+}
+
+.pengantar .read-more-text--show {
+  display: block;
+}
+
 /* layanan service */
 
 .mt-service {
@@ -970,6 +1025,17 @@ footer {
   .content-contact .pt {
     margin-left: 2rem;
   }
+
+  .pengantar-content .img-about {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .pengantar-content .img-about img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 963px) {
@@ -1063,6 +1129,27 @@ footer {
   }
 
   .content-about .about-text p {
+    margin-right: 0;
+  }
+
+  .pengantar-content {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+  }
+
+  .pengantar-content .img-about {
+    margin: 0 auto;
+  }
+
+  .pengantar .pengantar-desc {
+    margin-right: 0;
+  }
+
+  .pengantar .pengantar-desc .title {
+    margin-top: 2rem;
+  }
+
+  .pengantar .pengantar-desc p {
     margin-right: 0;
   }
 
@@ -1251,6 +1338,10 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  .pengantar .pengantar-desc .title {
+    font-size: 1.5rem;
+  }
+
   .visi-misi {
     margin-top: -2rem;
   }
