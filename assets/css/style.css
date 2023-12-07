@@ -409,6 +409,12 @@ nav ul li .nav-links.active::after {
   height: auto;
 }
 
+.pengantar-content .img-about p {
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
 .pengantar .read-more-btn {
   cursor: pointer;
   text-decoration: underline;
@@ -1338,10 +1344,6 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  .pengantar .pengantar-desc .title {
-    font-size: 1.5rem;
-  }
-
   .visi-misi {
     margin-top: -2rem;
   }
