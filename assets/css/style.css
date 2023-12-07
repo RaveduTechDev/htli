@@ -1045,6 +1045,10 @@ footer {
     margin: 1.6rem 0;
   }
 
+  .logo a img {
+    width: 65px;
+  }
+
   .content-about {
     flex-direction: column;
   }
