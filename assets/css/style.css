@@ -78,7 +78,7 @@ header.scrolling {
 }
 
 .logo a img {
-  width: 85px;
+  width: 75px;
 }
 
 nav ul {
@@ -89,7 +89,7 @@ nav ul {
 
 nav ul li {
   font-size: 1.07rem;
-  margin: 1.5rem 0 0 2rem;
+  margin: 1.1rem 0 0 2rem;
 }
 
 nav ul li a {
@@ -1114,11 +1114,11 @@ footer {
   .nav-responsive {
     display: flex;
     z-index: 10;
-    margin: 1.6rem 0;
+    margin: 1rem 0;
   }
 
   .logo a img {
-    width: 65px;
+    width: 55px;
   }
 
   .content-about {
